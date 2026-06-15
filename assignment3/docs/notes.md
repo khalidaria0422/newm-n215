@@ -1,0 +1,5 @@
+- Organize and refactor root variables
+- Make components reusable
+  - Headings
+  - Grid
+  - Cards

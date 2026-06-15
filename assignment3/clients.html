@@ -1,0 +1,265 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- GOOGLE FONT: INTER -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="css/styles.css" />
+    <title>TechFlow</title>
+  </head>
+
+  <body>
+    <!-- BRAND LOGO AND MAIN NAVIGATION -->
+    <header class="header">
+      <div class="container">
+        <nav class="nav">
+          <a href="index.html" class="brand">TechFlow</a>
+          <ul class="nav__list">
+            <li>
+              <a href="index.html" class="nav__link link">Home</a>
+            </li>
+            <li>
+              <a href="#clients-projects" class="nav__link link">Projects</a>
+            </li>
+            <li>
+              <a href="#clients-featured" class="nav__link link">Featured</a>
+            </li>
+            <li>
+              <a href="#contact" class="nav__link link">Contact</a>
+            </li>
+            <li>
+              <a href="#" class="btn btn--primary btn--small">Get Started</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <!-- MAIN CONTENT -->
+    <main>
+      <!-- HERO SECTION -->
+      <section class="clients-hero">
+        <div class="container">
+          <h1 class="clients-hero__title">
+            Turning Ideas Into Digital Success
+          </h1>
+          <p class="clients-hero__subtitle">
+            Explore the products and experiences we've built for startups and
+            growing businesses.
+          </p>
+
+          <a href="#clients-projects" class="btn btn--primary btn--large"
+            >Learn More &downarrow;</a
+          >
+        </div>
+      </section>
+
+      <!-- PROJECTS SECTION -->
+      <section class="clients-projects" id="clients-projects">
+        <div class="container">
+          <h2 class="clients-projects__title">Our Portfolio</h2>
+          <p class="clients-projects__subtitle">
+            Take a closer look at the websites, applications, and digital
+            experiences we've crafted for our clients.
+          </p>
+
+          <div class="clients-projects__grid">
+            <div class="projects-card card">
+              <img
+                src="images/clients/calendly.jpg"
+                alt="Lightening icon"
+                class="projects-card__image"
+              />
+              <h3 class="projects-card__title">Calendly</h3>
+              <p class="projects-card__description">
+                Calendly is your hub for scheduling meetings professionally and
+                efficiently, eliminating the hassle of back-and-forth emails so
+                you can get back to work.
+              </p>
+              <a href="#" class="btn btn--primary btn--small">Explore</a>
+            </div>
+
+            <div class="projects-card card">
+              <img
+                src="images/clients/integromat.jpg"
+                alt="Lightening icon"
+                class="projects-card__image"
+              />
+              <h3 class="projects-card__title">Integromat</h3>
+              <p class="projects-card__description">
+                Integromat lets you connect apps and automate workflows in a few
+                clicks. Move data between apps without effort so you can focus
+                on growing your business.
+              </p>
+              <a href="#" class="btn btn--primary btn--small">Explore</a>
+            </div>
+
+            <div class="projects-card card">
+              <img
+                src="images/clients/make.jpg"
+                alt="Lightening icon"
+                class="projects-card__image"
+              />
+              <h3 class="projects-card__title">Make</h3>
+              <p class="projects-card__description">
+                Make lets you design, build, and automate anything - from tasks
+                and workflows to apps and systems - in a few clicks.
+              </p>
+              <a href="#" class="btn btn--primary btn--small">Explore</a>
+            </div>
+
+            <div class="projects-card card">
+              <img
+                src="images/clients/razorpay.jpg"
+                alt="Lightening icon"
+                class="projects-card__image"
+              />
+              <h3 class="projects-card__title">Razorpay</h3>
+              <p class="projects-card__description">
+                Accept payments from customers. Automate payouts to vendors &
+                employees. Never run out of working capital.
+              </p>
+              <a href="#" class="btn btn--primary btn--small">Explore</a>
+            </div>
+
+            <div class="projects-card card">
+              <img
+                src="images/clients/swiggy.jpg"
+                alt="Lightening icon"
+                class="projects-card__image"
+              />
+              <h3 class="projects-card__title">Swiggy</h3>
+              <p class="projects-card__description">
+                Order food from favorite restaurants near you. Enjoy fast
+                deliveries and track your orders in real time from start to
+                finish.
+              </p>
+              <a href="#" class="btn btn--primary btn--small">Explore</a>
+            </div>
+
+            <div class="projects-card card">
+              <img
+                src="images/clients/webflow.jpg"
+                alt="Lightening icon"
+                class="projects-card__image"
+              />
+              <h3 class="projects-card__title">Webflow</h3>
+              <p class="projects-card__description">
+                Webflow empowers designers to build professional, custom
+                websites in a completely visual canvas with no code.
+              </p>
+              <a href="#" class="btn btn--primary btn--small">Explore</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- FEATURED SECTION -->
+      <section class="clients-featured" id="clients-featured">
+        <div class="container">
+          <img
+            src="images/clients/omnifood.png"
+            alt="Omnifood website"
+            class="featured-image"
+          />
+
+          <div class="featured-content">
+            <h2 class="featured-title">Our Most Recent Project - Omnifood</h2>
+            <p class="featured-description">
+              The smart 365-days-per-year food subscription that will make you
+              eat healthy again. Tailored to your personal tastes and
+              nutritional needs.
+            </p>
+
+            <div class="featured-buttons">
+              <a href="#" class="btn btn--primary btn--large"
+                >Start Building With Us</a
+              >
+              <a
+                href="https://omnifood-waxmaster.netlify.app"
+                target="_blank"
+                class="btn btn--secondary btn--large"
+                >Visit Website</a
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- COMPANY CONTACT AND LINKS -->
+    <footer class="footer" id="contact">
+      <div class="container">
+        <div class="footer__content">
+          <div class="footer__brand">
+            <a href="index.html" class="brand">TechFlow</a>
+            <p class="footer__description">
+              Building the future of digital experiences, one line of code at a
+              time.
+            </p>
+
+            <div class="footer__socials">
+              <a href="#" class="footer__socials-icon-wrapper">
+                <img src="images/icon-github.png" alt="Github icon/link" />
+              </a>
+              <a href="#" class="footer__socials-icon-wrapper">
+                <img src="images/icon-twitter.png" alt="Twitter icon/link" />
+              </a>
+              <a href="#" class="footer__socials-icon-wrapper">
+                <img src="images/icon-linkedin.png" alt="LinkedIn icon/link" />
+              </a>
+            </div>
+          </div>
+
+          <div class="footer__links">
+            <ul class="footer__links-list">
+              <li class="footer__links-item">
+                <h4 class="footer__links-title">Product</h4>
+              </li>
+              <li class="footer__links-item">
+                <a href="index.html#features" class="footer__links-link link"
+                  >Features</a
+                >
+              </li>
+              <li class="footer__links-item">
+                <a href="#" class="footer__links-link link">Pricing</a>
+              </li>
+              <li class="footer__links-item">
+                <a href="#" class="footer__links-link link">Documentation</a>
+              </li>
+            </ul>
+
+            <ul class="footer__links-list">
+              <li class="footer__links-item">
+                <h4 class="footer__links-title">Company</h4>
+              </li>
+              <li class="footer__links-item">
+                <a href="index.html#about" class="footer__links-link link"
+                  >About</a
+                >
+              </li>
+              <li class="footer__links-item">
+                <a href="#" class="footer__links-link link">Blog</a>
+              </li>
+              <li class="footer__links-item">
+                <a href="#" class="footer__links-link link">Careers</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <p class="footer__copyright">
+          &copy; 2026 TechFlow. All rights reserved.
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>
