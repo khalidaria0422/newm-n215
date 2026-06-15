@@ -1,0 +1,60 @@
+/* COLORS */
+$color-neutral-0: #ffffff;
+$color-neutral-100: #ececf0;
+$color-neutral-200: #d4d4d8;
+
+$color-primary: #030213;
+$color-primary-light: #292836;
+
+$color-secondary: $color-neutral-100;
+$color-secondary-dark: $color-neutral-200;
+
+$color-background: $color-neutral-0;
+$color-background-soft: $color-neutral-100;
+$color-background-soft-50: #ececf080;
+$color-background-soft-30: #ececf04d;
+$color-surface: $color-neutral-0;
+
+$color-text: #0a0a0a;
+$color-text-60: #0a0a0a99;
+$color-text-soft: #0a0a0acc;
+$color-text-muted: #0a0a0ab3;
+$color-text-inverse: $color-neutral-0;
+
+/* TYPOGRAPHY */
+$font-size-base: 1.6rem;
+$font-size-md: 1.8rem;
+$font-size-lg: 2rem;
+$font-size-xl: 2.4rem;
+$font-size-2xl: 3.6rem;
+$font-size-4xl: 4.8rem;
+
+$font-weight-normal: 400;
+$font-weight-medium: 500;
+$font-weight-semi-bold: 600;
+
+$line-height-tight: 1.1;
+$line-height-normal: 1.5;
+$line-height-relaxed: 1.75;
+
+/* SPACING */
+$spacing-2: 0.8rem;
+$spacing-3: 1.2rem;
+$spacing-4: 1.6rem;
+$spacing-6: 2.4rem;
+$spacing-8: 3.2rem;
+$spacing-10: 4rem;
+$spacing-12: 4.8rem;
+
+/* LAYOUT */
+$page-padding-inline: $spacing-6;
+$section-padding-block: 8rem;
+
+$container-width: calc(115.2rem + $page-padding-inline * 2);
+
+$card-min-width: 30rem;
+
+/* BORDER RADIUS */
+$border-radius-xs: 0.4rem;
+$border-radius-md: 1rem;
+$border-radius-lg: 1.4rem;

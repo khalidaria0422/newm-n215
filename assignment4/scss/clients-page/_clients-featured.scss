@@ -1,0 +1,41 @@
+@use "../variables" as *;
+
+.clients-featured {
+  padding-block: $section-padding-block;
+
+  background-color: $color-background;
+
+  .container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 45rem), 1fr));
+    gap: $spacing-12;
+
+    .featured-image {
+      border-radius: $border-radius-lg;
+    }
+
+    .featured-content {
+      margin-block: auto;
+
+      .featured-title {
+        color: $color-text;
+        font-size: $font-size-2xl;
+        font-weight: $font-weight-medium;
+        line-height: $line-height-tight;
+      }
+
+      .featured-description {
+        margin: $spacing-6 0 $spacing-8;
+
+        color: $color-text-muted;
+        font-size: $font-size-md;
+        line-height: $line-height-normal;
+      }
+
+      .featured-buttons {
+        display: flex;
+        gap: $spacing-4;
+      }
+    }
+  }
+}

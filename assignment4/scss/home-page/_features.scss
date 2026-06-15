@@ -1,0 +1,55 @@
+@use "../variables" as *;
+
+.features {
+  padding-block: $section-padding-block;
+
+  background-color: $color-background-soft-30;
+
+  .features__title {
+    color: $color-text;
+    font-size: $font-size-2xl;
+    font-weight: $font-weight-medium;
+    line-height: $line-height-tight;
+    text-align: center;
+  }
+
+  .features__subtitle {
+    margin: $spacing-4 0 $spacing-12;
+
+    color: $color-text-muted;
+    font-size: $font-size-md;
+    line-height: $line-height-normal;
+    text-align: center;
+  }
+
+  .features__grid {
+    display: grid;
+    grid-template-columns: repeat(
+      auto-fit,
+      minmax(min(100%, $card-min-width), 1fr)
+    );
+    gap: $spacing-8;
+
+    .features__card-icon-wrapper {
+      display: inline-block;
+
+      padding: $spacing-3;
+      border-radius: $border-radius-lg;
+
+      background-color: $color-neutral-100;
+    }
+
+    .features__card-title {
+      margin: $spacing-4 0 $spacing-3;
+
+      color: $color-text;
+      font-size: $font-size-md;
+      font-weight: $font-weight-medium;
+    }
+
+    .features__card-description {
+      color: $color-text-muted;
+      line-height: $line-height-normal;
+    }
+  }
+}

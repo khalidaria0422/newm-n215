@@ -1,0 +1,38 @@
+@use "../variables" as *;
+
+.clients-hero {
+  background:
+    linear-gradient(
+      rgba(255, 255, 255, 0.5) 0%,
+      rgba(255, 255, 255, 0.5) 60%,
+      rgba(255, 255, 255, 1) 100%
+    ),
+    url(../images/clients/hero-background.jpg);
+  background-size: cover;
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    min-height: 100vh;
+
+    .clients-hero__title {
+      color: $color-text;
+      font-size: $font-size-4xl;
+      font-weight: $font-weight-semi-bold;
+      line-height: $line-height-tight;
+      text-align: center;
+    }
+
+    .clients-hero__subtitle {
+      margin: $spacing-6 0 $spacing-8;
+
+      color: $color-text-muted;
+      font-size: $font-size-md;
+      line-height: $line-height-normal;
+      text-align: center;
+    }
+  }
+}
