@@ -37,7 +37,7 @@ Your project must demonstrate:
 
 - Proper use of the CSS box model
 - Margin and padding usage
-- box-sizing: border-box
+- `box-sizing: border-box`
 - Flexbox layout techniques
 - Responsive sizing
 - At least one media query

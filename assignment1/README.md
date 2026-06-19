@@ -19,15 +19,15 @@ Project Folder
 
 Your webpage must include:
 
-- A semantic <header> element
-- A semantic <nav> element
+- A semantic `<header>` element
+- A semantic `<nav>` element
 - A logo/title area
 - Navigation links
-- At least one <main> element
-- At least two <section> elements
-- A semantic <footer> element
+- At least one `<main>` element
+- At least two `<section>` elements
+- A semantic `<footer>` element
 - An external CSS stylesheet linked correctly
-- At least one image stored inside the images folder
+- At least one image stored inside the `images` folder
 - Basic CSS styling for layout, spacing, and colors
 
 ## Submission
