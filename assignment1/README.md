@@ -1,6 +1,6 @@
 # Luddy Toys
 
-Web 4: http://in-info-web4.luddy.indianapolis.iu.edu/~karia/assignment1
+Web 4: [Assignment 1](http://in-info-web4.luddy.indianapolis.iu.edu/~karia/assignment1)
 
 ## Instructions
 

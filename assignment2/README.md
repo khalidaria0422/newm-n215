@@ -1,6 +1,6 @@
 # TechFlow
 
-Web 4: http://in-info-web4.luddy.indianapolis.iu.edu/~karia/assignment2
+Web 4: [Assignment 2](http://in-info-web4.luddy.indianapolis.iu.edu/~karia/assignment2)
 
 ## Instructions
 

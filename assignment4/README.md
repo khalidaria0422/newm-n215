@@ -1,8 +1,8 @@
 # TechFlow
 
-Web 4: http://in-info-web4.luddy.indianapolis.iu.edu/~karia/assignment4
+Web 4: [Assignment 4](http://in-info-web4.luddy.indianapolis.iu.edu/~karia/assignment4)
 
-## Assignment Instructions
+## Instructions
 
 Using your existing TechFlow project:
 
