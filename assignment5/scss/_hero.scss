@@ -1,0 +1,91 @@
+@use 'variables' as *;
+@use 'mixins' as *;
+@use 'components';
+
+.hero {
+  @include flex;
+
+  min-height: calc(100vh - $nav-height);
+  padding: $spacing-1000 0 $spacing-1200;
+
+  background-image:
+    linear-gradient(
+      rgba($color-background, 0.3),
+      rgba($color-background, 0.6),
+      rgba($color-background, 0.85)
+    ),
+    url(../images/hero.jpg);
+
+  background-size: cover;
+  background-position: bottom;
+  background-repeat: no-repeat;
+
+  // CONTENT
+  .container {
+    text-align: center;
+
+    .hero__eyebrow {
+      margin-bottom: $spacing-500;
+
+      @include eyebrow($color-secondary);
+    }
+
+    .hero__title {
+      max-width: 20ch;
+      margin-bottom: $spacing-600;
+      margin-inline: auto;
+
+      @include title($color-text-inverse, $font-size-1100);
+    }
+
+    .hero__description {
+      max-width: 48ch;
+      margin-bottom: $spacing-800;
+      margin-inline: auto;
+
+      @include paragraph(rgba($color-text-inverse, 0.85), $font-size-500);
+    }
+
+    .hero-buttons {
+      @include flex($spacing-400);
+
+      margin-bottom: $spacing-1000;
+
+      .btn-primary {
+        @include btn($color-primary, $color-text-inverse);
+      }
+
+      .btn-outline {
+        @include btn(
+          $background-color: transparent,
+          $color: $color-text-inverse,
+          $border: $inset-border
+        );
+      }
+    }
+
+    .stats {
+      @include flex($spacing-700);
+
+      padding-top: $spacing-700;
+      border-top: 1px solid rgba($color-secondary, 0.25);
+
+      .stats__item {
+        .stats__number {
+          display: block;
+
+          color: $color-secondary;
+          font-family: 'Robot Slab', serif;
+          font-size: $font-size-600;
+          font-weight: $font-weight-bold;
+        }
+
+        .stats__label {
+          color: rgba($color-text-inverse, 0.7);
+          font-size: $font-size-100;
+          text-transform: uppercase;
+        }
+      }
+    }
+  }
+}

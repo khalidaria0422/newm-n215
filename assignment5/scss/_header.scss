@@ -1,0 +1,43 @@
+@use 'variables' as *;
+@use 'mixins' as *;
+@use 'components';
+
+.nav {
+  background-color: rgba($color-background, 0.96);
+
+  .container {
+    @include flex(0, space-between, center);
+
+    min-height: $nav-height;
+
+    .brand {
+      @include flex($spacing-300);
+
+      .brand-name {
+        color: $color-text-inverse;
+        font-family: 'Robot Slab', serif;
+      }
+    }
+
+    .nav__links {
+      @include flex($spacing-700);
+
+      .nav__link {
+        text-transform: uppercase;
+
+        @include link($color-secondary, $font-weight-medium);
+      }
+
+      .btn--primary {
+        @include btn(
+          $spacing-200 $spacing-500,
+          $color-primary,
+          $color-text-inverse,
+          $font-size-300,
+          $font-weight-semi-bold,
+          $border-radius-md
+        );
+      }
+    }
+  }
+}
