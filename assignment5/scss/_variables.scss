@@ -2,7 +2,7 @@
 * COLORS
 **************************************************/
 
-$color-primary: #2d5016;
+$color-primary: rgb(45, 80, 22);
 $color-secondary: rgb(196, 168, 130);
 $color-text: rgb(30, 35, 24);
 $color-text-secondary: #6b6355;
@@ -10,8 +10,9 @@ $color-text-inverse: rgb(245, 240, 232);
 
 $color-background: #1e2318;
 $color-background-light: #2d3a22;
-$color-background-secondary: #f5f0e8;
+$color-background-secondary: rgb(245, 240, 232);
 $color-background-footer: #111710;
+$color-surface: #fdfaf5;
 
 /**************************************************
 * TYPOGRAPHY
@@ -53,14 +54,20 @@ $letter-spacing-wide: 0.025em;
 * SPACING
 **************************************************/
 
+$spacing-50: 0.2rem;
 $spacing-100: 0.4rem;
+$spacing-150: 0.6rem;
 $spacing-200: 0.8rem;
+$spacing-250: 1rem;
 $spacing-300: 1.2rem;
+$spacing-350: 1.4rem;
 $spacing-400: 1.6rem;
 $spacing-500: 2rem;
 $spacing-600: 2.4rem;
+$spacing-650: 2.8rem;
 $spacing-700: 3.2rem;
 $spacing-800: 4rem;
+$spacing-850: 4.4rem;
 $spacing-900: 4.8rem;
 $spacing-1000: 6.4rem;
 $spacing-1100: 8rem;
@@ -74,8 +81,7 @@ $spacing-1300: 12.8rem;
 $container-width: 128rem;
 
 $page-padding-inline: 2.4rem;
-// CHANGE ME
-$section-padding-block: 8rem;
+$section-padding-block: 9.6rem;
 
 $nav-height: 6.4rem;
 
@@ -87,17 +93,14 @@ $border-radius-sm: 0.4rem;
 $border-radius-md: 0.8rem;
 $border-radius-lg: 1.2rem;
 $border-radius-xl: 1.6rem;
+$border-radius-2xl: 2rem;
 $border-radius-full: 9999px;
 
 /**************************************************
 * SHADOWS
 **************************************************/
 
-// CHANGE ME
-$shadow-sm: 0 0.1rem 0.2rem rgb(0 0 0 / 0.05);
-$shadow-md: 0 0.4rem 0.6rem rgb(0 0 0 / 0.1);
-$shadow-lg: 0 1rem 1.5rem rgb(0 0 0 / 0.1);
-$shadow-xl: 0 2rem 2.5rem rgb(0 0 0 / 0.1);
+$shadow-card: 0 0.2rem 1.6rem 0 rgba(#1e2318, 0.08);
 $inset-border: inset 0 0 0 0.2rem rgb(245, 240, 232, 0.6);
 
 /**************************************************

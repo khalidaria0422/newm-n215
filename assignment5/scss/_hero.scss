@@ -22,28 +22,29 @@
 
   // CONTENT
   .container {
+    @include flex($flex-direction: column);
+
     text-align: center;
 
     .hero__eyebrow {
-      margin-bottom: $spacing-500;
-
       @include eyebrow($color-secondary);
+
+      margin-bottom: $spacing-500;
     }
 
     .hero__title {
+      @include title($color-text-inverse, $font-size-1100);
+
       max-width: 20ch;
       margin-bottom: $spacing-600;
-      margin-inline: auto;
-
-      @include title($color-text-inverse, $font-size-1100);
     }
 
     .hero__description {
       max-width: 48ch;
       margin-bottom: $spacing-800;
-      margin-inline: auto;
 
-      @include paragraph(rgba($color-text-inverse, 0.85), $font-size-500);
+      color: rgba($color-text-inverse, 0.85);
+      font-size: $font-size-500;
     }
 
     .hero-buttons {
@@ -67,6 +68,7 @@
     .stats {
       @include flex($spacing-700);
 
+      width: fit-content;
       padding-top: $spacing-700;
       border-top: 1px solid rgba($color-secondary, 0.25);
 

@@ -12,9 +12,20 @@
       rel="stylesheet"
     />
 
+    <!-- Phosphor Icons -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/regular/style.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/fill/style.css"
+    />
+
     <link rel="stylesheet" href="css/styles.css" />
 
-    <!-- FIX: NOT WORKING -->
     <link rel="icon" type="image/png" href="images/pine-tree.png" />
 
     <title>Trail & Timber</title>
@@ -23,18 +34,18 @@
     <header>
       <nav class="nav">
         <div class="container">
-          <div class="brand">
+          <a href="#" class="brand">
             <img
               src="images/pine-tree-fullbg.png"
               alt="Pine tree logo"
               class="brand-logo"
             />
             <p class="brand-name">Trail & Timber</p>
-          </div>
+          </a>
 
           <ul class="nav__links">
             <li>
-              <a href="#" class="nav__link">Adventures</a>
+              <a href="#featured" class="nav__link">Adventures</a>
             </li>
             <li>
               <a href="#" class="nav__link">Gear</a>
@@ -43,15 +54,17 @@
               <a href="#" class="nav__link">Guides</a>
             </li>
             <li>
-              <a href="#" class="nav__link">About</a>
+              <a href="#about" class="nav__link">About</a>
             </li>
             <li>
-              <a href="#" class="nav__link">Contact</a>
+              <a href="#footer" class="nav__link">Contact</a>
             </li>
             <li>
-              <a href="#" class="btn btn--primary">Book Now</a>
+              <a href="#" class="btn--primary">Book Now</a>
             </li>
           </ul>
+
+          <i class="ph ph-list nav__mobile"></i>
         </div>
       </nav>
     </header>
@@ -96,55 +109,492 @@
           </div>
         </div>
       </section>
+
       <!-- SECTION FEATURED -->
-      <section class="featured">
-        <header class="section-header">
-          <p class="section-header__eyebrow">What we offer</p>
-          <h2 class="section-header__title">Featured Adventures</h2>
-          <p class="section-header__description">
-            Hand-crafted trips for every kind of explorer. Choose your terrain
-            and we'll take care of the rest.
-          </p>
-        </header>
-
-        <div class="featured__grid">
-          <article class="featured-card">
-            <img
-              src="images/moutain-trekking.avif"
-              alt="Two people mountain trekking with another mountain visible in the background"
-              class="featured-card__image"
-            />
-
-            <h3 class="featured-card__title">Mountain Trekking</h3>
-            <p class="featured-card__description">
-              Summit alpine peaks with our certified mountain guides. Routes for
-              all abilities, from scenic day hikes to multi-day ridge traverses.
+      <section class="featured" id="featured">
+        <div class="container">
+          <header class="section-header">
+            <p class="section-header__eyebrow">What we offer</p>
+            <h2 class="section-header__title">Featured Adventures</h2>
+            <p class="section-header__description">
+              Hand-crafted trips for every kind of explorer. Choose your terrain
+              and we'll take care of the rest.
             </p>
+          </header>
 
-            <div class="featured-card__meta">
-              <div class="featured-card__meta-item">
-                <span class="featured-card__meta-label">Duration</span>
-                <span class="featured-card__meta-value">2-7 Days</span>
+          <div class="featured__grid">
+            <article class="featured-card">
+              <span class="featured-card__badge">Most Popular</span>
+              <img
+                src="images/moutain-trekking.avif"
+                alt="Two people mountain trekking with another mountain visible in the background"
+                class="featured-card__image"
+              />
+
+              <div class="featured-card__content">
+                <h3 class="featured-card__title">Mountain Trekking</h3>
+                <p class="featured-card__description">
+                  Summit alpine peaks with our certified mountain guides. Routes
+                  for all abilities, from scenic day hikes to multi-day ridge
+                  traverses.
+                </p>
+
+                <div class="featured-card__meta">
+                  <div class="featured-card__meta-item">
+                    <span class="featured-card__meta-label">Duration</span>
+                    <span class="featured-card__meta-value"
+                      >2&ndash;7 Days</span
+                    >
+                  </div>
+
+                  <div class="featured-card__meta-item">
+                    <span class="featured-card__meta-label">Difficulty</span>
+                    <span class="featured-card__meta-value"
+                      >Moderate&ndash;Strenuous</span
+                    >
+                  </div>
+                </div>
+
+                <a href="#" class="featured-card__link">Learn More &rarr;</a>
               </div>
+            </article>
 
-              <div class="featured-card__meta-item">
-                <span class="featured-card__meta-label">Difficulty</span>
-                <span class="featured-card__meta-value"
-                  >Moderate-Strenuous</span
-                >
+            <article class="featured-card">
+              <span class="featured-card__badge">Family Friendly</span>
+              <img
+                src="images/forrest-camping.avif"
+                alt="Two people mountain trekking with another mountain visible in the background"
+                class="featured-card__image"
+              />
+
+              <div class="featured-card__content">
+                <h3 class="featured-card__title">Forest Camping</h3>
+                <p class="featured-card__description">
+                  Disconnect and recharge beneath a canopy of old-growth trees.
+                  We handle all gear and setup — you focus on the stars.
+                </p>
+
+                <div class="featured-card__meta">
+                  <div class="featured-card__meta-item">
+                    <span class="featured-card__meta-label">Duration</span>
+                    <span class="featured-card__meta-value"
+                      >1&ndash;4 Nights</span
+                    >
+                  </div>
+
+                  <div class="featured-card__meta-item">
+                    <span class="featured-card__meta-label">Difficulty</span>
+                    <span class="featured-card__meta-value"
+                      >Easy&ndash;Moderate</span
+                    >
+                  </div>
+                </div>
+
+                <a href="#" class="featured-card__link">Learn More &rarr;</a>
               </div>
-            </div>
+            </article>
 
-            <a href="#" class="featured-card__link">Learn More &rarr;</a>
-          </article>
+            <article class="featured-card">
+              <span class="featured-card__badge">Thrill Seekers</span>
+              <img
+                src="images/river-expeditions.avif"
+                alt="Two people mountain trekking with another mountain visible in the background"
+                class="featured-card__image"
+              />
+
+              <div class="featured-card__content">
+                <h3 class="featured-card__title">River Expeditions</h3>
+                <p class="featured-card__description">
+                  Navigate rushing rapids and calm canyon stretches with
+                  experienced river guides and top-of-the-line safety equipment.
+                </p>
+
+                <div class="featured-card__meta">
+                  <div class="featured-card__meta-item">
+                    <span class="featured-card__meta-label">Duration</span>
+                    <span class="featured-card__meta-value"
+                      >Half Day&ndash;3 Days</span
+                    >
+                  </div>
+
+                  <div class="featured-card__meta-item">
+                    <span class="featured-card__meta-label">Difficulty</span>
+                    <span class="featured-card__meta-value"
+                      >Moderate&ndash;Expert</span
+                    >
+                  </div>
+                </div>
+
+                <a href="#" class="featured-card__link">Learn More &rarr;</a>
+              </div>
+            </article>
+          </div>
         </div>
       </section>
-      <section class="services"></section>
-      <section class="about"></section>
-      <section class="testimonials"></section>
-      <section class="cta"></section>
+
+      <!-- SECTION SERVICES -->
+      <section class="services">
+        <div class="container">
+          <header class="section-header">
+            <p class="section-header__eyebrow">Our Servies</p>
+            <h2 class="section-header__title">Everything You Need</h2>
+            <p class="section-header__description">
+              From first-timers to seasoned backcountry veterans, we have a
+              service built for your next step outdoors.
+            </p>
+          </header>
+
+          <div class="services__grid">
+            <article class="services-card">
+              <img
+                src="images/compass-fullbg.png"
+                alt="Compass icon"
+                class="services-card__icon"
+              />
+              <h3 class="services-card__title">Guided Tours</h3>
+              <p class="services-card__description">
+                Led by certified wilderness professionals with deep local
+                knowledge of every trail, ridge, and waterway we traverse.
+              </p>
+            </article>
+
+            <article class="services-card">
+              <img
+                src="images/clipboard-fullbg.png"
+                alt="Clipboard icon"
+                class="services-card__icon"
+              />
+              <h3 class="services-card__title">Equipment Rentals</h3>
+              <p class="services-card__description">
+                Premium tents, packs, technical clothing, and navigation tools —
+                fully inspected and ready to go before each trip.
+              </p>
+            </article>
+
+            <article class="services-card">
+              <img
+                src="images/shield-fullbg.png"
+                alt="Shield icon"
+                class="services-card__icon"
+              />
+              <h3 class="services-card__title">Survival Training</h3>
+              <p class="services-card__description">
+                From fire-starting and shelter-building to emergency navigation
+                — gain the confidence to handle the unexpected.
+              </p>
+            </article>
+
+            <article class="services-card">
+              <img
+                src="images/people-fullbg.png"
+                alt="People icon"
+                class="services-card__icon"
+              />
+              <h3 class="services-card__title">Group Events</h3>
+              <p class="services-card__description">
+                Corporate retreats, school excursions, and custom group
+                experiences designed to build teamwork and lasting memories.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- SECTION ABOUT -->
+      <section class="about" id="about">
+        <div class="container">
+          <div class="about__image-wrapper">
+            <img
+              src="images/why-us.avif"
+              alt="People hiking on a trail"
+              class="about__image"
+            />
+            <div class="about__image-badge">
+              <span class="about__image-badge-value">15+</span>
+              <span class="about__image-badge-text">Years in the field</span>
+            </div>
+          </div>
+
+          <div class="about__content">
+            <p class="about__eyebrow">Our promise</p>
+            <h2 class="about__title">Why Adventure With Us?</h2>
+            <p class="about__description">
+              Trail & Timber was founded by a pair of wilderness guides who
+              believed that the outdoors should be accessible, safe, and deeply
+              meaningful — not just a checkbox on a bucket list.
+            </p>
+            <p class="about__description">
+              Every trip is designed with intention. We match terrain to skill
+              level, keep groups intimate, and ensure our guides know the land
+              as well as they know their guests.
+            </p>
+
+            <ul class="about__benefits">
+              <li class="about__benefit">
+                <i class="ph ph-check-circle about__benefit-icon"></i>
+                <span class="about__benefit-text"
+                  >IFMGA-certified mountain guides with 10+ years field
+                  experience</span
+                >
+              </li>
+              <li class="about__benefit">
+                <i class="ph ph-check-circle about__benefit-icon"></i>
+                <span class="about__benefit-text"
+                  >Small groups of 8 or fewer for a personal, immersive
+                  experience</span
+                >
+              </li>
+              <li class="about__benefit">
+                <i class="ph ph-check-circle about__benefit-icon"></i>
+                <span class="about__benefit-text"
+                  >Industry-leading safety protocols and real-time weather
+                  monitoring</span
+                >
+              </li>
+              <li class="about__benefit">
+                <i class="ph ph-check-circle about__benefit-icon"></i>
+                <span class="about__benefit-text"
+                  >Premium gear: Black Diamond, MSR, and Patagonia
+                  equipment</span
+                >
+              </li>
+              <li class="about__benefit">
+                <i class="ph ph-check-circle about__benefit-icon"></i>
+                <span class="about__benefit-text"
+                  >Leave No Trace certified — we protect the places we
+                  explore</span
+                >
+              </li>
+              <li class="about__benefit">
+                <i class="ph ph-check-circle about__benefit-icon"></i>
+                <span class="about__benefit-text"
+                  >24/7 emergency support on every guided trip</span
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- SECTION TESTIMONIALS -->
+      <section class="testimonials">
+        <div class="container">
+          <header class="section-header">
+            <p class="section-header__eyebrow">Adventurer Stories</p>
+            <h2 class="section-header__title">What Our Guests Say</h2>
+          </header>
+
+          <div class="testimonials__grid">
+            <article class="testimonial">
+              <div class="testimonial__rating">
+                <i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i
+                ><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i
+                ><i class="ph-fill ph-star"></i>
+              </div>
+
+              <blockquote class="testimonial__quote">
+                "Trail & Timber turned what I thought would be a terrifying
+                summit attempt into the most empowering day of my life. Our
+                guide, Dani, knew every switchback and kept the whole group
+                laughing the entire way up."
+              </blockquote>
+
+              <footer class="testimonial__footer">
+                <img
+                  src="images/maya-chen.avif"
+                  alt="Maya Chen"
+                  class="testimonial__image"
+                />
+                <div>
+                  <p class="testimonial__name">Maya Chen</p>
+                  <p class="testimonial__meta">
+                    Mountain Trekking &mdash; June 2024
+                  </p>
+                </div>
+              </footer>
+            </article>
+
+            <article class="testimonial">
+              <div class="testimonial__rating">
+                <i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i
+                ><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i
+                ><i class="ph-fill ph-star"></i>
+              </div>
+
+              <blockquote class="testimonial__quote">
+                "We brought our two kids (ages 9 and 12) for a three-night
+                forest camp. Zero stress — they handled everything from bear
+                boxes to stargazing maps. Our family still talks about the
+                fireflies on night two."
+              </blockquote>
+
+              <footer class="testimonial__footer">
+                <img
+                  src="images/jordan-okafor.avif"
+                  alt="Maya Chen"
+                  class="testimonial__image"
+                />
+                <div>
+                  <p class="testimonial__name">Jordan & Priya Okafor</p>
+                  <p class="testimonial__meta">
+                    Forest Camping &mdash; August 2024
+                  </p>
+                </div>
+              </footer>
+            </article>
+
+            <article class="testimonial">
+              <div class="testimonial__rating">
+                <i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i
+                ><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i
+                ><i class="ph-fill ph-star"></i>
+              </div>
+
+              <blockquote class="testimonial__quote">
+                "I've done whitewater on three continents. This was the best-run
+                trip I've experienced — the safety briefing was thorough without
+                being over-cautious, and the canyon section was jaw-dropping."
+              </blockquote>
+
+              <footer class="testimonial__footer">
+                <img
+                  src="images/rafael-torres.avif"
+                  alt="Maya Chen"
+                  class="testimonial__image"
+                />
+                <div>
+                  <p class="testimonial__name">Rafael Torres</p>
+                  <p class="testimonial__meta">
+                    River Expedition &mdash; May 2024
+                  </p>
+                </div>
+              </footer>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- SECTION CTA -->
+      <section class="cta">
+        <div class="container">
+          <header class="section-header">
+            <p class="section-header__eyebrow">Limited Spots Available</p>
+            <h2 class="section-header__title">
+              Ready for Your Next Adventure?
+            </h2>
+            <p class="section-header__description">
+              Join hundreds of adventurers who have explored the outdoors with
+              Trail & Timber. Your next great story starts here.
+            </p>
+          </header>
+
+          <div class="cta-buttons">
+            <a href="#" class="btn-primary">Book Today</a>
+            <a href="#" class="btn-outline">View All Trips</a>
+          </div>
+        </div>
+      </section>
     </main>
 
-    <footer class="footer"></footer>
+    <footer class="footer" id="footer">
+      <div class="container">
+        <div class="footer__content">
+          <div class="footer__brand">
+            <a href="#" class="brand">
+              <img
+                src="images/pine-tree-fullbg.png"
+                alt="Pine tree logo"
+                class="brand-logo"
+              />
+              <p class="brand-name">Trail & Timber</p>
+            </a>
+
+            <p class="brand-description">
+              Guiding adventurers into the wild since 2009. We believe every
+              trail has a story worth telling.
+            </p>
+
+            <div class="footer__contact">
+              <i class="ph ph-phone footer__contact-logo"></i>
+              <p>(541) 555-0182</p>
+            </div>
+
+            <div class="footer__contact">
+              <i class="ph ph-envelope-simple footer__contact-logo"></i>
+              <p>hello@trailandtimber.com</p>
+            </div>
+            <div class="footer__contact">
+              <i class="ph ph-map-pin footer__contact-logo"></i>
+              <p>Bend, Oregon 97701</p>
+            </div>
+          </div>
+
+          <nav class="footer__nav">
+            <div class="footer__column">
+              <h3 class="footer__heading">Company</h3>
+              <ul class="footer__links">
+                <li><a href="#" class="footer__link">About Us</a></li>
+                <li><a href="#" class="footer__link">Our Guides</a></li>
+                <li><a href="#" class="footer__link">Sustainability</a></li>
+                <li><a href="#" class="footer__link">Press & Media</a></li>
+                <li><a href="#" class="footer__link">Careers</a></li>
+              </ul>
+            </div>
+
+            <div class="footer__column">
+              <h3 class="footer__heading">Adventures</h3>
+              <ul class="footer__links">
+                <li><a href="#" class="footer__link">Mountain Trekking</a></li>
+                <li><a href="#" class="footer__link">Forest Camping</a></li>
+                <li><a href="#" class="footer__link">River Expeditions</a></li>
+                <li><a href="#" class="footer__link">Winter Snowshoe</a></li>
+                <li><a href="#" class="footer__link">Custom Trips</a></li>
+              </ul>
+            </div>
+
+            <div class="footer__column">
+              <h3 class="footer__heading">Resources</h3>
+              <ul class="footer__links">
+                <li><a href="#" class="footer__link">Gear Checklist</a></li>
+                <li><a href="#" class="footer__link">Trail Conditions</a></li>
+                <li><a href="#" class="footer__link">Safety Guidelines</a></li>
+                <li><a href="#" class="footer__link">Trip FAQ</a></li>
+                <li><a href="#" class="footer__link">Gift Cards</a></li>
+              </ul>
+            </div>
+          </nav>
+
+          <form action="/subscribe" method="post" class="footer__newsletter">
+            <h3 class="footer__heading">Stay Connected</h3>
+            <p class="footer__newsletter-description">
+              Trip alerts, trail conditions, and gear guides — straight to your
+              inbox.
+            </p>
+
+            <input
+              type="email"
+              name="email"
+              placeholder="your@email.com"
+              class="footer__newsletter-input"
+              required
+            />
+
+            <a href="#" class="btn-primary">Subscribe</a>
+          </form>
+        </div>
+
+        <div class="footer__bottom">
+          <p class="footer__copyright">
+            &copy; 2024 Trail & Timber Adventures. All rights reserved.
+          </p>
+
+          <ul class="footer__legal">
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms of Service</a></li>
+            <li><a href="#">Cookie Settings</a></li>
+          </ul>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>

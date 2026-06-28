@@ -1,7 +1,29 @@
 @use 'variables' as *;
+@use 'mixins' as *;
 
 .container {
   max-width: $container-width;
   padding-inline: $page-padding-inline;
   margin-inline: auto;
+}
+
+.brand {
+  @include flex($spacing-300);
+
+  .brand-logo {
+    width: auto;
+  }
+
+  .brand-name {
+    color: $color-text-inverse;
+    font-family: 'Robot Slab', serif;
+  }
+}
+
+.footer__heading {
+  @include title($color-text-inverse, $font-size-200);
+
+  margin-bottom: $spacing-500;
+
+  text-transform: uppercase;
 }

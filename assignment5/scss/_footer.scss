@@ -1,0 +1,133 @@
+@use 'variables' as *;
+@use 'mixins' as *;
+
+.footer {
+  padding-block: $spacing-1100 $spacing-700;
+
+  background-color: $color-background-footer;
+
+  .container {
+    .footer__content {
+      display: grid;
+      grid-template-columns: 1fr 3fr 1fr;
+      column-gap: $spacing-900;
+
+      padding-bottom: $spacing-1000;
+
+      color: rgba($color-text-inverse, 0.5);
+
+      border-bottom: 1px solid rgba($color-secondary, 0.12);
+
+      .footer__brand {
+        .brand {
+          justify-content: start;
+
+          margin-bottom: $spacing-400;
+        }
+
+        .brand-description {
+          max-width: 22ch;
+          margin-bottom: $spacing-600;
+
+          font-size: $font-size-200;
+        }
+
+        .footer__contact {
+          @include flex($spacing-200, start);
+
+          + .footer__contact {
+            margin-top: $spacing-250;
+          }
+
+          .footer__contact-logo {
+            color: $color-secondary;
+          }
+        }
+      }
+
+      .footer__nav {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        column-gap: $spacing-900;
+
+        .footer__links {
+          li + li {
+            margin-top: $spacing-300;
+          }
+
+          .footer__link {
+            color: inherit;
+
+            &:hover {
+              opacity: 0.8;
+            }
+
+            &:active {
+              opacity: 1;
+            }
+          }
+        }
+      }
+
+      .footer__newsletter {
+        .footer__newsletter-description {
+          margin-bottom: $spacing-400;
+        }
+
+        .footer__newsletter-input {
+          display: block;
+
+          width: 100%;
+          margin-bottom: $spacing-200;
+          padding: $spacing-250 $spacing-350;
+
+          background-color: rgba($color-text-inverse, 0.08);
+          color: inherit;
+          font-size: $font-size-200;
+
+          border: 1px solid rgba($color-secondary, 0.25);
+          border-radius: $border-radius-md;
+        }
+
+        .btn-primary {
+          @include btn(
+            $color-primary,
+            $color-text-inverse,
+            $spacing-250 $spacing-400,
+            $font-size-200,
+            $border-radius: $border-radius-md
+          );
+
+          display: block;
+
+          text-align: center;
+        }
+      }
+    }
+
+    .footer__bottom {
+      @include flex($justify-content: space-between);
+
+      margin-top: $spacing-700;
+
+      color: rgba($color-text-inverse, 0.35);
+      font-size: $font-size-100;
+
+      .footer__legal {
+        @include flex($spacing-600);
+
+        a {
+          color: inherit;
+
+          &:hover {
+            opacity: 0.8;
+          }
+
+          &:active {
+            opacity: 1;
+          }
+        }
+      }
+    }
+  }
+}

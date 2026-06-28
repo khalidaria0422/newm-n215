@@ -1,0 +1,30 @@
+@use 'variables' as *;
+@use 'mixins' as *;
+
+.cta {
+  padding-block: $section-padding-block;
+
+  background-color: $color-primary;
+
+  .container {
+    @include section-header(
+      $color-secondary,
+      $color-text-inverse,
+      rgba($color-text-inverse, 0.8)
+    );
+
+    .cta-buttons {
+      text-align: center;
+
+      .btn-primary {
+        @include btn($color-secondary, $color-text);
+      }
+
+      .btn-outline {
+        @include btn(transparent, $color-text-inverse, $border: $inset-border);
+
+        margin-left: $spacing-400;
+      }
+    }
+  }
+}

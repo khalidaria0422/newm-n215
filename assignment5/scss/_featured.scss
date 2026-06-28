@@ -1,0 +1,94 @@
+@use 'variables' as *;
+@use 'mixins' as *;
+
+.featured {
+  padding-block: $section-padding-block;
+
+  background-color: $color-background-secondary;
+
+  .container {
+    @include section-header;
+
+    .featured__grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: $spacing-700;
+
+      .featured-card {
+        position: relative;
+
+        background-color: $color-surface;
+
+        box-shadow: $shadow-card;
+        border-radius: $border-radius-xl;
+        overflow: hidden;
+
+        .featured-card__badge {
+          position: absolute;
+          left: $spacing-400;
+          top: $spacing-400;
+
+          padding: $spacing-100 $spacing-300;
+
+          background-color: $color-primary;
+          color: $color-text-inverse;
+          font-size: $font-size-100;
+          font-weight: $font-weight-semi-bold;
+          text-transform: uppercase;
+
+          border-radius: $border-radius-full;
+        }
+
+        .featured-card__link {
+          @include link($color-primary, $font-weight-semi-bold);
+        }
+
+        .featured-card__content {
+          padding: $spacing-600;
+
+          .featured-card__title {
+            @include title($color-text, $font-size-500);
+
+            margin-bottom: $spacing-300;
+          }
+
+          .featured-card__description {
+            padding-bottom: $spacing-500;
+            border-bottom: 0.1rem solid rgba($color-primary, 0.1);
+
+            color: $color-text-secondary;
+            font-size: $font-size-200;
+            font-weight: $font-weight-normal;
+          }
+
+          .featured-card__meta {
+            @include flex($spacing-400, start);
+
+            margin-top: $spacing-400;
+
+            .featured-card__meta-item {
+              margin-bottom: $spacing-400;
+
+              .featured-card__meta-label {
+                display: block;
+
+                color: $color-secondary;
+                font-size: $font-size-100;
+                font-weight: $font-weight-semi-bold;
+                text-transform: uppercase;
+              }
+
+              .featured-card__meta-value {
+                display: block;
+
+                color: $color-text;
+                font-size: $font-size-200;
+                font-weight: $font-weight-medium;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

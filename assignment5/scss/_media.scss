@@ -1,2 +1,17 @@
 // 900 - navigation to mobile
 // 800 - make things small and line break
+
+@use 'variables' as *;
+@use 'mixins' as *;
+
+@media (max-width: 56.25rem) {
+  .nav__links {
+    li {
+      display: none;
+    }
+  }
+
+  .nav__mobile {
+    display: inline-block !important;
+  }
+}
